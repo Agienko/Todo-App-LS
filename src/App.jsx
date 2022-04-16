@@ -1,10 +1,15 @@
 import './fonts/raleway.css'
 import './App.scss';
+import Header from './components/Header/Header';
+import TasksLists from './components/Main/TasksLists';
 
-function App() {
+const App = props => {
   return (
     <div className="App">
-     fghjfgkhfkfkvkvgk дгшрдглрдшгнрдшг
+      <div className="AppContainer">
+        <Header/>
+        <TasksLists/>
+      </div>
     </div>
   );
 }

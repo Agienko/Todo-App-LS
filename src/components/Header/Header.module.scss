@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+
+.header [alt="logo"]{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.header [alt="close"]{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}

@@ -9,3 +9,25 @@
 body{
     font-family: 'Roboto', 'Raleway', sans-serif;
 }
+
+.App{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px 60px;
+    background-image: url(./img/background.jpg);
+    .AppContainer{
+        padding: 40px;
+        width: 90%;
+        min-width: 300px;
+        max-width: 800px;
+        background-color: white;
+        box-shadow: 0 0 5px rgba(16, 16, 16, 0.282);
+        border-radius:4px;
+        .carusel{
+            background-color:aquamarine;
+            width: 150px;
+            height: 300px;
+        }
+    }
+}
