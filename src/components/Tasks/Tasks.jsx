@@ -1,18 +1,21 @@
 import s from './Tasks.module.scss'
+import TaskList from './TasksList/TaskList'
 
 const Tasks = props => {
   return (
         <main className={s.tasks}>
           <header>
-            <h1>Задания</h1>
-            <div>ending...</div>
+            <div className={s.headerContainer}>
+              <h1>Задания</h1>
+              <p>2 из 7</p>
+            </div>
           </header>
-          <div>
-            todos
-          </div>
-          <div>
+         <TaskList/>
+         
+          <footer className={s.footer}>
+            <textarea />
             <button>+</button>
-          </div>
+          </footer>
           
         </main>
   )

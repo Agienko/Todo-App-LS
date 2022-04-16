@@ -1,3 +1,62 @@
+@import '../../consts.scss';
+
+
 .tasks{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 250px); 
+    .headerContainer{
+        display: block;
+    }
+    h1{ 
+        font-weight: 800;
+        white-space: nowrap;
+        font-size: 24px;
+        background-color: white;
+    }
+    p{
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: sans-serif, 'Roboto';
+        color: $borderColor;
+    }
+
+}
+.footer{
+    margin-top: 10px;
+    display: flex;
+    align-self: flex-end;
+    button{
+        border: 2px solid $colorRed;
+        border-left: none;
+        font-size: 13px;
+        background-color: $colorRed;
+        border-radius: 0 3px 3px 0;
+        width: 36px;
+        height: 36px;
+        transition: background-color .2s linear;
+        color: white;
+        &:hover{
+            cursor: pointer;
+            background-color: $colorFiolet;
+            color: white;
+        }
+        &:active{
+            color: $colorRed;
+        }
+    }
+    textarea{
+       padding: 8px;
+        vertical-align: center;
+        height: 36px;
+        resize: none;
+        border: 2px solid $colorRed;
+        border-right: none;
+        border-radius: 3px 0 0 3px;
+        &:focus{
+            outline: none;
+        }
+    }
 }

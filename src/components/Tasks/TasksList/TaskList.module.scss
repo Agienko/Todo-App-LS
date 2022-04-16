@@ -1,0 +1,25 @@
+@import '../../../consts.scss';
+
+.taskList{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: calc(100% - 42px);
+    border-top: 1px solid $borderColor;
+    padding-top: 30px;
+}
+
+.taskItem{
+  label{
+      display: flex;
+      position: relative;
+      font-weight: bolder;
+      input{
+          position: absolute;
+          left: -45px;
+          top: 4px;
+      }
+  }
+  p{
+      font-size: 12px;
+  }
+}

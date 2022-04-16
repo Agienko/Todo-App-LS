@@ -1,0 +1,18 @@
+.taskItem{
+  label{
+      display: flex;
+      position: relative;
+      font-weight: bolder;
+      input{
+          position: absolute;
+          left: -45px;
+          top: 4px;
+          &:checked{
+              background-color:aqua;
+          }
+      }
+  }
+  p{
+      font-size: 12px;
+  }
+}
