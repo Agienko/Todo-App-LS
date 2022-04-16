@@ -6,7 +6,7 @@ const TasksLists = props => {
         <main className={s.main}>
           <hr />
           <h1>Списки <span>Заданий</span></h1>
-            <button className={s.addListBtn}>+</button>
+            <button className={s.addListBtn} onClick={()=> console.log('создать список')}>+</button>
             <p>Добавить Список</p>
           <Karusel/>
         </main>
