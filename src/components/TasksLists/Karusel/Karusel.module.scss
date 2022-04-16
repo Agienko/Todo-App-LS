@@ -1,9 +1,43 @@
-.karusel{
-    display: flex;
-    border: 1px solid gray;
+
+.karuselContainer{
     max-width: 100%;
-    overflow-x: hidden;
-    flex-wrap: nowrap;
-    border-radius: 6px;
-    gap: 8px;
+    position: relative;
+    .karusel{
+        display: flex;
+       
+        overflow-x: hidden;
+        flex-wrap: nowrap;
+        border-radius: 6px;
+        gap: 8px;
+    }
+    .arrowRight, .arrowLeft{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        opacity: 0.3;
+        top: 110px;
+        z-index: 4;
+        transition: opacity .1s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.6;
+        }
+        &:active{
+            opacity: 0.8;
+        }
+    }
+    .arrowRight{
+        right: -24px;
+        transform: rotate(180deg);
+        
+    }
+    .arrowLeft{
+        left: -24px;
+    }
+
+
 }
+
+
+

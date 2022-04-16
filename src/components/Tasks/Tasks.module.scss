@@ -40,11 +40,9 @@
         color: white;
         &:hover{
             cursor: pointer;
-            background-color: $colorFiolet;
-            color: white;
         }
         &:active{
-            color: $colorRed;
+            color: $colorFiolet;
         }
     }
     textarea{
@@ -60,3 +58,6 @@
         }
     }
 }
+
+
+

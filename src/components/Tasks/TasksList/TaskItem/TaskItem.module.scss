@@ -1,4 +1,8 @@
+@import '../../../../consts.scss';
+
 .taskItem{
+    margin-bottom: 10px;
+    line-height: 1;
   label{
       display: flex;
       position: relative;
@@ -7,12 +11,44 @@
           position: absolute;
           left: -45px;
           top: 4px;
-          &:checked{
-              background-color:aqua;
-          }
       }
   }
   p{
       font-size: 12px;
   }
+}
+
+
+.little{
+    font-size: 12px;
+    margin-bottom: 15px;
+    div{
+        color: white;
+    }
+    label{
+        display: flex;
+        input{
+            opacity: 0.4;
+            margin-right: 10px;
+            top: 4px;
+        }
+    }
+    p{
+       display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+.completed{
+    text-decoration: line-through;
+    color: $colorRed;
+   
 }

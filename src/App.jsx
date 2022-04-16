@@ -13,9 +13,9 @@ const App = props => {
         <BrowserRouter>
             <Header/>
             <Routes>
-              <Route path={'/'} element={<Navigate to={'/tasksLists'}/>} />
-              <Route path={'/tasksLists'} element={<TasksLists/>} />
-              <Route path={'/tasks'} element={<Tasks/>} />
+              <Route path={'/*'} element={<Navigate to={'/tasksLists/*'}/>} />
+              <Route path={'/tasksLists/*'} element={<TasksLists/>} />
+              <Route path={'/tasks/*'} element={<Tasks/>} />
             </Routes>
            
           </BrowserRouter>

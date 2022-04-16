@@ -1,3 +1,4 @@
+import TaskItem from '../../../Tasks/TasksList/TaskItem/TaskItem'
 import s from './KaruselItem.module.scss'
 
 const KaruselItem = props => {
@@ -6,7 +7,15 @@ const KaruselItem = props => {
         <header>
           <h2>Название</h2>
         </header>
-        <p>tasks</p>
+        <section>
+          <TaskItem little={true}/>
+          <TaskItem little={true}/>
+          <TaskItem little={true}/>
+          <TaskItem little={true}/>
+          <TaskItem little={true}/>
+        </section>
+        
+        
       </div>
   )
 }

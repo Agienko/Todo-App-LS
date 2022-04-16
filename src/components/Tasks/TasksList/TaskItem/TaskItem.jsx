@@ -2,10 +2,10 @@ import s from './TaskItem.module.scss'
 
 const TaskItem = props => {
   return (
-            <div className={s.taskItem}>
+            <div className={props.little ? s.little : s.taskItem}>
               <label>
-                <input type="checkbox" />
-                <div>Tsak Name</div>
+                <input type="checkbox" disabled ={props.little}/>
+                <div className={s.completed}>Tsak Name</div>
               </label>
               <p>Date</p>
             </div>

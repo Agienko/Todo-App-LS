@@ -1,8 +1,24 @@
 .karuselItem{
+    position: relative;
+    padding: 15px;
     flex-shrink: 0;
-    // margin-right:10px;
+    color: white;
     border-radius: 6px;
     background-color:rgb(119, 18, 166);
     width: 150px;
     height: 260px;
+    overflow: hidden;
+    header{
+        margin: 20px 0 20px 5px;
+        h2{
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+    section{
+        border-top: 1px solid rgba(255, 255, 255, 0.626);
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+
 }
