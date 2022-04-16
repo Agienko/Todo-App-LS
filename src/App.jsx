@@ -1,16 +1,26 @@
 import './fonts/raleway.css'
 import './App.scss';
 import Header from './components/Header/Header';
-import TasksLists from './components/Main/TasksLists';
+import TasksLists from './components/TasksLists/TasksLists';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 const App = props => {
   return (
-    <div className="App">
-      <div className="AppContainer">
-        <Header/>
-        <TasksLists/>
+    
+      <div className="App">
+        <div className="AppContainer">
+        <BrowserRouter>
+            <Header/>
+            <Routes>
+            <Route path={'/'} element={<Navigate to={'/tasksLists'}/>} />
+              <Route path={'/tasksLists'} element={<TasksLists/>} />
+              
+            </Routes>
+           
+          </BrowserRouter>
+        </div>
       </div>
-    </div>
+   
   );
 }
 
