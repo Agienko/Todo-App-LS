@@ -1,3 +1,54 @@
+@import '../../consts.scss';
+
+
 .main{
-    
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    hr{
+        width: 110%;
+        background-color: none;
+        border: none;
+        border-top: 1px solid $borderColor;
+    }
+    h1{ 
+        font-weight: 800;
+        white-space: nowrap;
+        font-size: 24px;
+        position: relative;
+        padding: 0 24px;
+        background-color: white;
+        top: -16px;
+        span{
+            font-weight: 300;
+            color:gray;
+        }
+    }
+    p{
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 15px;
+        margin-bottom: 45px;
+        color:rgb(154, 154, 154);
+    }
+}
+
+.addListBtn{
+        border: 1px solid $borderColor;
+        font-size: 13px;
+        background-color: white;
+        border-radius: 3px;
+        margin-top: 20px;
+        width: 36px;
+        height: 36px;
+        transition: background-color .2s linear;
+        &:hover{
+            cursor: pointer;
+            background-color:$colorRed;
+            color: white;
+        }
+        &:active{
+            color: $colorFiolet;
+        }
 }

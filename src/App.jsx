@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './components/Header/Header';
 import TasksLists from './components/TasksLists/TasksLists';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Tasks from './components/Tasks/Tasks';
 
 const App = props => {
   return (
@@ -12,9 +13,9 @@ const App = props => {
         <BrowserRouter>
             <Header/>
             <Routes>
-            <Route path={'/'} element={<Navigate to={'/tasksLists'}/>} />
+              <Route path={'/'} element={<Navigate to={'/tasksLists'}/>} />
               <Route path={'/tasksLists'} element={<TasksLists/>} />
-              
+              <Route path={'/tasks'} element={<Tasks/>} />
             </Routes>
            
           </BrowserRouter>

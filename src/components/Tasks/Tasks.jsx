@@ -2,7 +2,7 @@ import s from './Tasks.module.scss'
 
 const Tasks = props => {
   return (
-        <div className={s.tasks}>
+        <main className={s.tasks}>
           <header>
             <h1>Задания</h1>
             <div>ending...</div>
@@ -14,7 +14,7 @@ const Tasks = props => {
             <button>+</button>
           </div>
           
-        </div>
+        </main>
   )
 }
 

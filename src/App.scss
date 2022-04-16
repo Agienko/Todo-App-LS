@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body{
-    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Roboto', sans-serif;
 }
 
 .App{
@@ -24,10 +25,6 @@ body{
         background-color: white;
         box-shadow: 0 0 5px rgba(16, 16, 16, 0.282);
         border-radius:4px;
-        .carusel{
-            background-color:aquamarine;
-            width: 150px;
-            height: 300px;
-        }
+        
     }
 }
