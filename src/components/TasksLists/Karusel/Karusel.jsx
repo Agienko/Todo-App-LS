@@ -21,8 +21,8 @@ setMove(move + CARD_WIDTH )
       <img src={arrow} alt="right" className={s.arrowRight} onClick={rightClick}/>
       <div className={s.karusel} >
         <div className={s.karuselWindow}  style={{ transform: `translateX(${move}px)` }}>
-        {props.tasksLists.map( list => 
-          <KaruselItem name={list.name} todos={list.todos} key={list.id} id={list.id}/>)}
+        {props.tasksLists.map( (list, i) => 
+          <KaruselItem color={!!(i % 2)} name={list.name} todos={list.todos} key={list.id} id={list.id}/>)}
         </div>
        
       </div>

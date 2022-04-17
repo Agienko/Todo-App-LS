@@ -4,9 +4,10 @@ import s from './KaruselItem.module.scss'
 
 const KaruselItem = props => {
   console.log(props)
+  const colorStyle = props.color ? {backgroundColor: '#582994'} : {backgroundColor: '#df6335'}
   return (
     <Link to={`/tasks/${props.id}`}>
-    <div className={s.karuselItem} onClick={() => console.log(props)}>
+    <div className={s.karuselItem} style={colorStyle} onClick={() => console.log(props)}>
         <header>
           <h2>{props.name}</h2>
         </header>

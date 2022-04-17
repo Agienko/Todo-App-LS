@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import s from './Tasks.module.scss'
 import TaskList from './TasksList/TaskList'
@@ -6,11 +7,13 @@ import TaskList from './TasksList/TaskList'
 
 const Tasks = props => {
 
-  const param = useParams()['*']
-  const list = props.lists.filter(i => i.id === +param)[0]
-
-console.log( list)
-
+  const param = +useParams()['*']
+  const list = props.lists.filter(i => i.id === param)[0]
+  const [text, setText] = useState('')
+const handleClick = () => {
+  props.addTodo(param, text)
+  setText('')
+}
   return (
         <main className={s.tasks}>
           <header>
@@ -22,8 +25,8 @@ console.log( list)
          <TaskList todos={list.todos}/>
          
           <footer className={s.footer}>
-            <textarea />
-            <button>+</button>
+            <input value={text} onChange={(e) => setText(e.target.value)} tabIndex={0}/>
+            <button onClick={handleClick}>+</button>
           </footer>
           
         </main>

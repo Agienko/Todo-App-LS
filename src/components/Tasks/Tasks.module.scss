@@ -27,7 +27,7 @@
 .footer{
     margin-top: 10px;
     display: flex;
-    align-self: flex-end;
+    align-self: center;
     button{
         border: 2px solid $colorRed;
         border-left: none;
@@ -45,7 +45,7 @@
             color: $colorFiolet;
         }
     }
-    textarea{
+    input{
        padding: 8px;
         vertical-align: center;
         height: 36px;
