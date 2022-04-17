@@ -3,7 +3,7 @@ import s from './TaskItem.module.scss'
 
 const TaskItem = props => {
 
-  const param = +useParams()['*']
+  const param = useParams()['*']
   const handleChange = () => {
     props.toggleCompleted(param, props.nn, !props.completed)
   }

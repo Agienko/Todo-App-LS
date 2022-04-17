@@ -14,15 +14,14 @@ setMove(move + CARD_WIDTH )
     setMove(move > 0 ? move - CARD_WIDTH : 0)
   }
 
-
   return (
     <div className={s.karuselContainer}>
       <img src={arrow} alt="left" className={s.arrowLeft} onClick={leftClick}/>
       <img src={arrow} alt="right" className={s.arrowRight} onClick={rightClick}/>
       <div className={s.karusel} >
         <div className={s.karuselWindow}  style={{ transform: `translateX(${move}px)` }}>
-        {props.tasksLists.map( (list, i) => 
-          <KaruselItem color={!!(i % 2)} name={list.name} todos={list.todos} key={list.id} id={list.id}/>)}
+        {Object.entries(props.tasksLists).map( (list, i) => 
+          <KaruselItem color={!!(i % 2)} name={list[0]} todos={list[1]} key={list[0]} id={list[0]}/>)}
         </div>
        
       </div>

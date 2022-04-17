@@ -3,7 +3,6 @@ import TaskItem from '../../../Tasks/TasksList/TaskItem/TaskItem'
 import s from './KaruselItem.module.scss'
 
 const KaruselItem = props => {
-  console.log(props)
   const colorStyle = props.color ? {backgroundColor: '#582994'} : {backgroundColor: '#df6335'}
   return (
     <Link to={`/tasks/${props.id}`}>
