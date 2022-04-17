@@ -4,11 +4,17 @@
     position: relative;
     .karusel{
         display: flex;
-       
         overflow-x: hidden;
         flex-wrap: nowrap;
         border-radius: 6px;
-        gap: 8px;
+       
+        .karuselWindow{
+            display: flex;
+            width: 800px;
+            transition: transform .5s ease-in-out;
+            gap: 8px;
+        }
+
     }
     .arrowRight, .arrowLeft{
         position: absolute;
